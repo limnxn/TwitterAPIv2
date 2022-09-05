@@ -1,0 +1,11 @@
+.DS_Store
+
+# Ignore all logfiles and tempfiles.
+**/log/*
+**/tmp/*
+!**/log/.keep
+!**/tmp/.keep
+
+# dotenv, dotenv-rails
+.env
+.env.*

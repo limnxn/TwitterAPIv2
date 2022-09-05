@@ -1,0 +1,35 @@
+FROM alpine:latest
+
+ENV APP_PATH=/app
+
+RUN apk update && \
+apk upgrade && \
+apk add --no-cache \
+bash \
+build-base \
+gcc \
+gfortran \
+git \
+g++ \
+mysql-client \
+mysql-dev \
+openssl \
+ruby \
+ruby-bundler \
+ruby-dev \
+ruby-io-console \
+ruby-irb \
+ruby-rdoc \
+sqlite-dev \
+ttf-freefont \
+tzdata \
+udev \
+vim 
+
+WORKDIR $APP_PATH
+
+COPY ./src/Gemfile $APP_PATH
+COPY ./src/Gemfile.lock $APP_PATH
+RUN bundle install
+
+CMD ["top"]
