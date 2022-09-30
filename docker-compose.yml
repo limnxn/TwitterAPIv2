@@ -18,7 +18,7 @@ services:
       dockerfile: dockerfile-mysql
     environment:
       TZ: Asia/Tokyo
-      MYSQL_DATABASE: gametrend
+      MYSQL_DATABASE: twitterapiv2
       MYSQL_USER: test
       MYSQL_PASSWORD: passw0rd
       MYSQL_ROOT_PASSWORD: passw0rd
