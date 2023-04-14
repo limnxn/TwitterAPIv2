@@ -6,7 +6,7 @@ Try Twitter API v2 with Ruby on Rails.
 
 ## First
 
-### Add Bearer Token
+### Add bearer token
 
 ```bash
 $ touch alpine/src/.env.development
@@ -21,7 +21,7 @@ $ echo BEARER_TOKEN=ABCDEF... > .env.development
 $ docker-compose up -d
 ```
 
-### Start the Web Server
+### Start the web server
 
 ```bash
 $ docker-compose exec alpine rails s -b 0.0.0.0
