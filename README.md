@@ -24,7 +24,7 @@ $ docker-compose up -d
 ### Start the web server
 
 ```bash
-$ docker-compose exec alpine rails s -b 0.0.0.0
+$ docker compose exec alpine rails s -b 0.0.0.0
 ```
 
 ## Testing
